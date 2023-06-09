@@ -101,7 +101,7 @@ class Topic extends API {
                     'content' => $contentSafe,
                     'content_md' => $content,
                     'created' => $time,
-                    'created_ipaddress' => ip2long($_SERVER['HTTP_X_FORWARDED_FOR'])
+                    'created_ipaddress' => ((isset($_SERVER['HTTP_X_FORWARDED_FOR'])) ? ip2long($_SERVER['HTTP_X_FORWARDED_FOR']) : 0)
                 );
                 
                 if ($_SESSION['user']->isModerator == $bid) {
@@ -487,7 +487,7 @@ class Topic extends API {
                     'content' => $contentSafe,
                     'content_md' => $content,
                     'updated' => $time,
-                    'updated_ipaddress' => ip2long($_SERVER['HTTP_X_FORWARDED_FOR']),
+                    'updated_ipaddress' => ((isset($_SERVER['HTTP_X_FORWARDED_FOR'])) ? ip2long($_SERVER['HTTP_X_FORWARDED_FOR']) : 0),
                     'updated_id_ur' => $_SESSION['user']->id
                 );
                 
