@@ -5,7 +5,7 @@ if (empty($_SESSION['gbbboard'])) {
 
 $nameCleaned = GrokBB\Util::sanitizeBoard($_SESSION['gbbboard']);
 $board = $GLOBALS['db']->getOne('board b INNER JOIN ' . DB_PREFIX . 'board_settings bs ON b.id = bs.id_bd LEFT JOIN ' . DB_PREFIX . 'user_board ub ON b.id = ub.id_bd AND ub.deleted = 0 AND ub.id_ur = ' . ((isset($_SESSION['user'])) ? $_SESSION['user']->id : 0), 
-    array('b.name' => $nameCleaned), false, array('b.*', 'b.id as id', 'bs.*', 'bs.id as bsid', 'ub.added as favorite'));
+    array('b.name' => $nameCleaned), false, array('b.*', 'bs.*', 'b.id as id', 'bs.id as bsid', 'ub.added as favorite'));
 
 if ($board === false) {
     header('Location: ' . SITE_BASE_URL . '/error/template');
