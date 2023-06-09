@@ -519,9 +519,6 @@ if ($board->isArchived) {
                 <span class="uk-visible-large">Hi, and welcome to your new community! You can start by customizing the sidebar and your branding by clicking <a href="<?php echo SITE_BASE_URL; ?>/g/<?php echo $_SESSION['gbbboard']; ?>/settings" class="uk-button uk-button-primary">My Board Settings</a></span>
                 <div class="uk-margin-top uk-visible-large"><a href="<?php echo SITE_BASE_URL; ?>/g/<?php echo $_SESSION['gbbboard']; ?>/users" class="uk-button uk-button-primary">Users & Stats</a> will let you manage users, create badges, send announcements and view your daily / monthly statistics.</div>
                 <div class="uk-margin-top uk-visible-large">Remember that you can always ask for <a href="<?php echo SITE_BASE_URL; ?>/g/GrokBB_Help" class="uk-button uk-button-primary">Help</a> if you need too.</div>
-                <div class="uk-margin-top uk-visible-large"><br />Take a deep breath ...</div>
-                <div class="uk-margin-top">You're a board owner now! Smile, have some birthday <i class="uk-icon uk-icon-birthday-cake" style="font-size: 150%; color: #23395B"></i> and enjoy the view.</div>
-                <div class="uk-hidden-large uk-alert uk-alert-danger"><i class="uk-icon uk-icon-warning"></i>&nbsp;&nbsp;Please note that some administrative features are hidden or hard to use on smaller devices. We suggest using a tablet device in landscape mode or larger for managing your board.</div>
                 </div>
             </div>
         </div>
