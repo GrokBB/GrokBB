@@ -696,8 +696,8 @@ class User extends API {
 	    
 	    // get the user's reputation in the entire GrokBB site
 	    // topic count is weighted at 60%, reply count at 40%
-	    $tPoints = ($_SESSION['gbbstats']->counter_topics > 0) ? (($uStatsTopics / $_SESSION['gbbstats']->counter_topics) * 100) * 0.6 : 0;
-        $rPoints = ($_SESSION['gbbstats']->counter_replies > 0) ? (($uStatsReplies / $_SESSION['gbbstats']->counter_replies) * 100) * 0.4 : 0;
+	    $tPoints = ($_SESSION['gbbstats'] && $_SESSION['gbbstats']->counter_topics > 0) ? (($uStatsTopics / $_SESSION['gbbstats']->counter_topics) * 100) * 0.6 : 0;
+        $rPoints = ($_SESSION['gbbstats'] && $_SESSION['gbbstats']->counter_replies > 0) ? (($uStatsReplies / $_SESSION['gbbstats']->counter_replies) * 100) * 0.4 : 0;
         
         $reputation .= round($tPoints + $rPoints);
         
