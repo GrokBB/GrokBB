@@ -11,6 +11,7 @@ $images = @scandir($imagesPath); if (!$images) { $images = array(); }
 
 $categories = $GLOBALS['db']->getAll('board_category', array('id_bd' => $board->id), 'defcat DESC, name ASC');
 $settings = $GLOBALS['db']->getOne('board_settings', array('id_bd' => $board->id));
+if (!$settings) { $settings = new stdClass(); }
 
 $tags = $GLOBALS['db']->getAll('board_tag', array('id_bd' => $board->id), '');
 foreach ($tags as $tag) { $_SESSION['board']->tags[] = str_replace("'", "\'", $tag->name); }
