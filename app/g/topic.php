@@ -4,6 +4,7 @@ if (!isset($_SESSION['user'])) {
 }
 
 $title = '';
+$reply = false;
 $replyDash = strpos($_SESSION['objectid'], '-');
 
 if ($replyDash !== false) {
