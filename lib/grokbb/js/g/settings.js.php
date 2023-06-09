@@ -871,7 +871,7 @@ function delTag(tag) {
 }
 
 var tagHandlerSettings = {
-    assignedTags: [<?php echo ($_SESSION['board']->tags) ? "'" . implode("','", $_SESSION['board']->tags) . "'" : ""; ?>],
+    assignedTags: [<?php echo (isset($_SESSION['board']->tags)) ? "'" . implode("','", $_SESSION['board']->tags) . "'" : ""; ?>],
            onAdd: function(tag) { return addTag(tag); },
         onDelete: function(tag) { return delTag(tag); }
 }
