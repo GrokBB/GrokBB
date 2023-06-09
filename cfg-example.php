@@ -1,6 +1,9 @@
 <?php
 // configure the defines and then rename to cfg.php
 
+// you must remove the following values from the "sql mode" variable in MySQL
+// ONLY_FULL_GROUP_BY and STRICT_TRANS_TABLES
+
 define('SITE_BASE_URL', 'https://localhost');
 define('SITE_BASE_DIR', 'C:\Users\Me\Projects\GrokBB\src\\');
 define('SITE_BASE_APP', SITE_BASE_DIR . 'app' . DIRECTORY_SEPARATOR);
