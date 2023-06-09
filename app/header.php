@@ -47,7 +47,7 @@ if ($_SESSION['user']) {
 	<link rel="stylesheet" href="<?php echo $resUK; ?>/css/components/upload.almost-flat.min.css" />
 	<link rel="stylesheet" href="<?php echo SITE_BASE_URL; ?>/lib/jquery-ui-autocomplete-1.11.4/jquery-ui.min.css" />
 	<link rel="stylesheet" href="<?php echo SITE_BASE_URL; ?>/lib/tag-handler-1.3.1/css/jquery.taghandler.css" />
-	<link rel="stylesheet" href="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=css" />
+	<!-- <link rel="stylesheet" href="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=css" /> -->
 	<link rel="stylesheet" href="<?php echo SITE_BASE_URL; ?>/lib/grokbb/css/grokbb.css.php" />
 	
 	<script src="<?php echo $resJQ; ?>/jquery.min.js"></script>
@@ -57,7 +57,7 @@ if ($_SESSION['user']) {
     <script src="<?php echo $resUK; ?>/js/components/upload.min.js"></script>
     <script src="<?php echo SITE_BASE_URL; ?>/lib/jquery-ui-autocomplete-1.11.4/jquery-ui.min.js"></script>
     <script src="<?php echo SITE_BASE_URL; ?>/lib/tag-handler-1.3.1/js/jquery.taghandler.min.js"></script>
-    <script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/includes/js/jquery-ui.js"></script>
+    <!-- <script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/includes/js/jquery-ui.js"></script> -->
     
     <?php if ($GLOBALS['includePicker']) { ?>
     <link rel="stylesheet" href="<?php echo $resSM; ?>/spectrum.css" />

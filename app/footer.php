@@ -16,8 +16,8 @@
 
 <?php require(SITE_BASE_APP . 'modals.php'); ?>
 
-<script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=djs"></script>
-<script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=js"></script>
+<!-- <script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=djs"></script> -->
+<!-- <script src="<?php echo SITE_BASE_URL; ?>/lib/arrowchat/external.php?type=js"></script> -->
 <script src="<?php echo SITE_BASE_URL; ?>/lib/grokbb/js/grokbb.js.php"></script>
 
 <?php
