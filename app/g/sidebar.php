@@ -101,11 +101,11 @@ if ($board->desc_sidebar_whos) {
     <div class="uk-modal-dialog">
         <div class="uk-width-1-1">
             <div class="uk-panel uk-panel-box uk-panel-header">
-                <div class="uk-panel-title uk-text-bold uk-text-primary">2017 Q3 Release - Content Sharing & Social Integration</div>
+                <div class="uk-panel-title uk-text-bold uk-text-primary">Content Sharing & Social Integration</div>
                 
-                This feature is not implemented yet. It is scheduled to be released in Q3, 2017.<br /><br />
+                This feature is not implemented yet. It is on the roadmap and will be released soon.<br /><br />
                 Don't go! We would love to hear your thoughts and brainstorm ideas with you &nbsp;(•‿•)<br />
-                Please particpate in the discussion at <a href="https://www.grokbb.com/g/GrokBB_Dev/view/7">GrokBB Dev</a>.
+                Please particpate in the discussions at <a href="https://www.grokbb.com/g/GrokBB_Dev">GrokBB Dev</a>.
                 
                 <br /><br />
                 
