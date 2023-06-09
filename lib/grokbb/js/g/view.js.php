@@ -271,7 +271,11 @@ $('#topic-edit-update').click(function() {
                 
                 $('#topic-content').show();
                 $('#topic-content-updated').html('Just Now');
+                <?php if (isset($_SESSION['user'])) { ?>
                 $('#topic-content-updated-by').html('<a href="<?php echo SITE_BASE_URL; ?>/user/view/<?php echo $_SESSION['user']->id; ?>"><?php echo $_SESSION['user']->username; ?></a>');
+                <?php } else { ?>
+                $('#topic-content-updated-by').html('');
+                <?php } ?>
                 $('#topic-content-buttons').show();
             }
         }

@@ -42,7 +42,7 @@ if (in_array($_SESSION['pagerqst'], array('g/topic')) && $board->isArchived) {
     header('Location: ' . SITE_BASE_URL . '/g/' . $_SESSION['gbbboard']);
 }
 
-if (in_array($_SESSION['pagerqst'], array('g/topic', 'g/view')) && $_SESSION['user']->isBanned) {
+if (in_array($_SESSION['pagerqst'], array('g/topic', 'g/view')) && isset($_SESSION['user']) && $_SESSION['user']->isBanned) {
     header('Location: ' . SITE_BASE_URL . '/g/' . $_SESSION['gbbboard']);
 }
 
