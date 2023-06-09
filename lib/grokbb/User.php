@@ -674,11 +674,11 @@ class User extends API {
 	    $reputation = '';
 	    
 	    if ($stats) {
-	        $bStatsPoints  = ($stats->board[$uid]) ? $stats->board[$uid]->counter_points : 0;
-	        $bStatsTopics  = ($stats->board[$uid]) ? $stats->board[$uid]->counter_topics : 0;
-	        $bStatsReplies = ($stats->board[$uid]) ? $stats->board[$uid]->counter_replies : 0;
-	        $uStatsTopics  = ($stats->board[$uid]) ? $stats->users[$uid]->counter_topics : 0;
-	        $uStatsReplies = ($stats->board[$uid]) ? $stats->users[$uid]->counter_replies : 0;
+	        $bStatsPoints  = (isset($stats->board[$uid])) ? $stats->board[$uid]->counter_points : 0;
+	        $bStatsTopics  = (isset($stats->board[$uid])) ? $stats->board[$uid]->counter_topics : 0;
+	        $bStatsReplies = (isset($stats->board[$uid])) ? $stats->board[$uid]->counter_replies : 0;
+	        $uStatsTopics  = (isset($stats->board[$uid])) ? $stats->users[$uid]->counter_topics : 0;
+	        $uStatsReplies = (isset($stats->board[$uid])) ? $stats->users[$uid]->counter_replies : 0;
 	    } else {
 	        // this should only be used when querying the stats for a single user
 	        // TODO: add the "gbb_user_board" and "gbb_user" queries

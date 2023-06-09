@@ -543,7 +543,11 @@ $('[id*="reply-content-edit"], [id*="reply-responses-div-"]')
             
             $('#reply-content-' + rid).show();
             $('#reply-content-updated-' + rid).html('Just Now');
+            <?php if (isset($_SESSION['user'])) { ?>
             $('#reply-content-updated-by-' + rid).html('<a href="<?php echo SITE_BASE_URL; ?>/user/view/<?php echo $_SESSION['user']->id; ?>"><?php echo $_SESSION['user']->username; ?></a>');
+            <?php } else { ?>
+            $('#reply-content-updated-by-' + rid).html('');
+            <?php } ?>
             $('#reply-content-buttons-' + rid).show();
             
             keepAliveClose();

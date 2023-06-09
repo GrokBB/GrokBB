@@ -165,9 +165,15 @@ $topics = $GLOBALS['db']->getAll('topic t INNER JOIN ' . DB_PREFIX . 'user u ON 
     ((isset($sqry['user']) && $sqry['user'] == 'moderator') ? ' LEFT JOIN ' . DB_PREFIX . 'user_board_moderator ubm ON u.id = ubm.id_ur AND ubm.id_bd = ' . $board->id . ' LEFT JOIN ' . DB_PREFIX . 'user owner ON u.id = owner.id AND owner.id = ' . $board->id_ur : ''), 
     $filter, $sortSQL, array('DISTINCT(t.id) as tid', 't.*', 'u.*', 'u.id as uid', 't.created as created', 't.updated as updated', 't.counter_replies as counter_replies', 'bc.id as bcid', 'bc.name as bcname', 'bc.color as bccolor', 'bc.image as bcimage'), $maximum, false, (($orderBy == 'new') ? 't.id' : ''));
 
-$topicsByPage = array_chunk($topics, $perPage);
-$topicsByPageCount = count($topicsByPage);
-$topics = $topicsByPage[$numPage - 1];
+if ($topics) {
+    $topicsByPage = array_chunk($topics, $perPage);
+    $topicsByPageCount = count($topicsByPage);
+    $topics = $topicsByPage[$numPage - 1];
+} else {
+    $topicsByPage = array();
+    $topicsByPageCount = 0;
+    $topics = array();
+}
 
 if (isset($sticky) && $sticky) {
     if ($topics) {
