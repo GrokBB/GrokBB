@@ -1,0 +1,1 @@
+<?php define('ARROWCHAT_EDITION', 'business'); ?>

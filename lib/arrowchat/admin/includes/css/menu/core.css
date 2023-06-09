@@ -1,0 +1,39 @@
+/* reset --------------------------------- */
+.menu, .menu ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/* --------------------------------------- */
+.menu li, .menu ul a {position:relative;}
+.menu > li {float:left;}
+.menu > li.floatr {float:right;}
+.menu li > a {display:block;}
+/* --------------------------------------- */
+.menu ul {
+	position:absolute;
+	display:none;
+	width:150px;
+	z-index:100;
+}
+.menu ul ul {
+	top:0;
+	left:125px;
+}
+.menu > li.floatr > ul {right:0;}
+.menu > li.floatr > ul ul {left:-125px;}
+.menu li:hover > ul {display:block;}
+/* mega menu ----------------------------- */
+.menu .cols1, .menu .cols2, .menu .cols3, .menu .cols4, .menu .cols5 {
+	position:absolute;
+	display:none;
+	overflow:auto;
+}
+.menu .cols1, .menu .col1 {width:160px;}
+.menu .cols2, .menu .col2 {width:320px;}
+.menu .cols3, .menu .col3 {width:480px;}
+.menu .cols4, .menu .col4 {width:640px;}
+.menu .cols5, .menu .col5 {width:800px;}
+.menu > li.floatr > div {right:0;}
+.menu > li:hover > div {display:block;}
+.menu .col1, .menu .col2, .menu .col3, .menu .col4, .menu .col5 {float:left;}

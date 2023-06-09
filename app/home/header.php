@@ -1,0 +1,1 @@
+<?php echo 'Simple, Beautiful, Community Building'; ?>

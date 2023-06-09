@@ -1,0 +1,39 @@
+#arrowchat_public_list{
+	padding: 5px;
+	width: 170px;
+	height: 161px;
+}
+
+.arrowchat_tooltip_content2 {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    font-size: 11px;
+    white-space: nowrap;
+    text-align: left;
+    line-height: normal
+}
+
+#arrowchat_tooltip2 {
+    background: url(../../../themes/new_facebook_full/images/bg-core.png) no-repeat top left;background-position: 55px -118px;
+    z-index: 1001;
+    position: fixed;
+    display: none;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    text-align: left
+}
+
+.arrowchat_tooltip_left2 {
+    background-position: 12px -118px !important;
+    text-align: left
+}
+
+.arrowchat_userlist_pub {
+	float:left;
+	width:32px;
+	height:32px;
+	padding:1px;
+	cursor:pointer;
+}

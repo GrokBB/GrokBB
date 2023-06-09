@@ -1,0 +1,421 @@
+.itip-tooltip
+{
+	background-color: #f5f5f5;
+	position: absolute;
+	border: 1px solid #c5c6c8;
+	height: 40px;
+	padding-right: 8px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.itip-tooltip .icons
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 60px;
+}
+
+
+/*You can tweak the triangle settings with left, right, top and bottom if it's not centered*/
+.itip-tooltip .triangle
+{
+	position: relative;
+	border-style:solid;
+	border-width:10px;
+	width:0;
+	height:0;
+}
+
+.itip-tooltip .triangle-border
+{
+	position: relative;
+	border-style:solid;
+	border-width:10px;
+	width:0;
+	height:0;
+}
+
+.itip-tooltip .triangle-right
+{
+	right: 19px;
+	top: -10px;
+	border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.itip-tooltip .triangle-right-border
+{
+	right: 20px;
+	top: 10px;
+	border-color: transparent #c5c6c8 transparent transparent;
+}
+
+.itip-tooltip .triangle-left
+{
+	top: -10px;
+	border-color: transparent transparent transparent #f5f5f5;
+}
+
+.itip-tooltip .triangle-left-border
+{
+	top: 10px;
+	border-color: transparent transparent transparent #c5c6c8;
+}
+
+.itip-tooltip .triangle-bottom
+{
+	top: -40px;
+	border-color: transparent transparent #f5f5f5 transparent;
+}
+
+.itip-tooltip .triangle-bottom-border
+{
+	top: -21px;
+	border-color: transparent transparent #c5c6c8 transparent;
+}
+
+.itip-tooltip .triangle-top
+{
+	top: 20px;
+	border-color: #f5f5f5 transparent transparent transparent;
+}
+
+.itip-tooltip .triangle-top-border
+{
+	top: 41px;
+	border-color: #c5c6c8 transparent transparent transparent;
+}
+
+/* icons settings */
+
+.itip-tooltip .icons li
+{
+	float: left;
+	width: 40px;
+	margin: 0 0 0 10px ;
+	padding: 0 0 0 0;
+}
+
+.itip-tooltip .icons #correct
+{
+	background: url("img/correct.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #correct:hover
+{
+	background: url("img/correct-hover.png");
+}
+
+.itip-tooltip .icons #thumbsup
+{
+	background: url("img/thumbsup.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #thumbsup:hover
+{
+	background: url("img/thumbsup-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #edit
+{
+	background: url("img/edit.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #edit:hover
+{
+	background: url("img/edit-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #info
+{
+	background: url("img/info.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #info:hover
+{
+	background: url("img/info-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #search
+{
+	background: url("img/search.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #search:hover
+{
+	background: url("img/search-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #twitter
+{
+	background: url("img/twitter.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #twitter:hover
+{
+	background: url("img/twitter-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #facebook
+{
+	background: url("img/facebook.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #facebook:hover
+{
+	background: url("img/facebook-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #youtube
+{
+	background: url("img/youtube.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #youtube:hover
+{
+	background: url("img/youtube-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #gplus
+{
+	background: url("img/gplus.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #gplus:hover
+{
+	background: url("img/gplus-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #camera
+{
+	background: url("img/camera.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #camera:hover
+{
+	background: url("img/camera-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #download
+{
+	background: url("img/download.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #download:hover
+{
+	background: url("img/download-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #flag
+{
+	background: url("img/flag.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #flag:hover
+{
+	background: url("img/flag-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #hand
+{
+	background: url("img/hand.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #hand:hover
+{
+	background: url("img/hand-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #note
+{
+	background: url("img/note.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #note:hover
+{
+	background: url("img/note-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #person
+{
+	background: url("img/person.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #person:hover
+{
+	background: url("img/person-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #piechart
+{
+	background: url("img/piechart.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #piechart:hover
+{
+	background: url("img/piechart-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #play
+{
+	background: url("img/play.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #play:hover
+{
+	background: url("img/play-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #save
+{
+	background: url("img/save.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #save:hover
+{
+	background: url("img/save-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #shopcart
+{
+	background: url("img/shopcart.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #shopcart:hover
+{
+	background: url("img/shopcart-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+
+.itip-tooltip .icons #trashcan
+{
+	background: url("img/trashcan.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #trashcan:hover
+{
+	background: url("img/trashcan-hover.png");
+	width: 20px;
+	height: 20px;
+}
+
+.itip-tooltip .icons #close-left
+{
+	background: url("img/close.png") no-repeat 10px;
+	background-position: 0px;
+	width: 30px;
+	height: 20px;
+	border-right: 1px solid #c5c6c8;
+}
+
+.itip-tooltip .icons #close-right
+{
+	background: url("img/close.png") no-repeat 10px;
+	width: 30px;
+	height: 20px;
+	border-left: 1px solid #c5c6c8;
+}
+
+.itip-tooltip .icons #close-left:hover
+{
+	background: url("img/close-hover.png") no-repeat;
+}
+
+.itip-tooltip .icons #close-right:hover
+{
+	background: url("img/close-hover.png") no-repeat 10px;
+}
+
+.itip-tooltip .icons:hover
+{
+	cursor: pointer;
+}
+

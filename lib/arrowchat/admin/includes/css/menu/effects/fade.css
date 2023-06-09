@@ -1,0 +1,44 @@
+.fade ul, .fade li > div {
+	display:block !important;
+	visibility:hidden;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=0);
+	opacity:0;
+
+	-webkit-transition:visibility 0s linear .2s, opacity .2s ease-in;
+	-moz-transition:visibility 0s linear .2s, opacity .2s ease-in;
+	-o-transition:visibility 0s linear .2s, opacity .2s ease-in;
+	-ms-transition:visibility 0s linear .2s, opacity .2s ease-in;
+	transition:visibility 0s linear .2s, opacity .2s ease-in;
+}
+
+.fade li:hover > ul, .fade li:hover > div {
+	visibility:visible;
+	
+	-webkit-transition-delay:0s;
+	-moz-transition-delay:0s;
+	-o-transition-delay:0s;
+	-ms-transition-delay:0s;
+	transition-delay:0s;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+	opacity:1;
+}
+
+.fade > li > a .bubble-top {
+	-webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+	-o-transition:-o-transform .3s;
+	-ms-transition:-ms-transform .3s;
+	 transition:transform .3s;
+}
+
+.fade > li > a:hover .bubble-top {
+	-webkit-transform:translate3d(0, -3px, 0);
+	-moz-transform:translateY(-3px);
+	-o-transform:translateY(-3px);
+	-ms-transform:translateY(-3px);
+	transform:translateY(-3px);
+}

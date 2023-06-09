@@ -1,0 +1,19 @@
+ErrorDocument 404 /error/template
+
+Options +FollowSymlinks -Multiviews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_URI} !^/lib/
+RewriteCond %{REQUEST_URI} !^/img/
+RewriteCond %{REQUEST_URI} !(api.php) [NC]
+RewriteCond %{REQUEST_URI} !(cfg.php) [NC]
+RewriteCond %{REQUEST_URI} !(ext.php) [NC]
+RewriteCond %{REQUEST_URI} !(img.php) [NC]
+RewriteCond %{REQUEST_URI} !(index.php) [NC]
+
+RewriteRule ^(.*)$ /index.php%{REQUEST_URI} [L]
