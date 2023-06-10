@@ -43,7 +43,7 @@ if (isset($urlparts[3])) {
 }
 
 // parse the requested template
-$pagerqst = ($urlparts[0]) ? $urlparts[0] . (($urlparts[1]) ? '/' . $urlparts[1] : '') : '';
+$pagerqst = (isset($urlparts[0])) ? $urlparts[0] . ((isset($urlparts[1])) ? '/' . $urlparts[1] : '') : '';
 $template = ($pagerqst === '') ? 'home/index' : $pagerqst;
 $template = SITE_BASE_APP . str_replace('/', DIRECTORY_SEPARATOR, $template)  . '.php';
 

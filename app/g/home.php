@@ -7,7 +7,7 @@ $maximum = 500;
 $perPage = 50;
 $numPage = (isset($_GET['page']) && $_GET['page'] > 0) ? (int) $_GET['page'] : 1;
 
-$orderBy = ($sort == 'qry') ? $sqry['sort'] : $sort;
+$orderBy = (isset($sort) && $sort == 'qry') ? $sqry['sort'] : $sort;
 
 switch ($orderBy) {
     case 'rel' :
@@ -49,15 +49,17 @@ switch ($orderBy) {
     case 'cat' :
         $sortSQL = 'bc.name ASC, t.created DESC';
         break;
+    default:
+        $sortSQL = false;
 }
 
 $filter = array('t.id_bd' => $board->id, 't.deleted' => 0);
-if ($bcat) { $filter['t.id_bc'] = array('IN', $bcat); }
+if (!empty($bcat)) { $filter['t.id_bc'] = array('IN', $bcat); }
 
 $urTagsSQL = '';
 $bdTagsSQL = '';
 
-if ($btag) {
+if (!empty($btag)) {
     $urTags = array();
     $bdTags = array();
     
@@ -120,7 +122,7 @@ if ($btag) {
     }
 }
 
-if ($sort == 'qry') {
+if (isset($sort) && $sort == 'qry') {
     if (trim($sqry['text']) != '') {
         switch ($sqry['type']) {
             case 'title' :

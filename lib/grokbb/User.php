@@ -411,7 +411,8 @@ class User extends API {
         		          'remember' => $rememberHash,
         		          'login' => time(),
         		          'login_attempts' => 0, 
-        	              'login_ipaddress' => ip2long($_SERVER['HTTP_X_FORWARDED_FOR']))
+        	              'login_ipaddress' => ((isset($_SERVER['HTTP_X_FORWARDED_FOR'])) ? ip2long($_SERVER['HTTP_X_FORWARDED_FOR']) : 0)
+        		    )
         		);
         		
         		$this->result = true;
@@ -424,7 +425,8 @@ class User extends API {
         	            array('id' => $user->id, 
         	                  'login' => time(),
         	                  'login_attempts' => $user->login_attempts + 1, 
-        	                  'login_ipaddress' => ip2long($_SERVER['HTTP_X_FORWARDED_FOR']))
+        	                  'login_ipaddress' => ((isset($_SERVER['HTTP_X_FORWARDED_FOR'])) ? ip2long($_SERVER['HTTP_X_FORWARDED_FOR']) : 0)
+        	            )
         	        );
         	        
             	    $this->result = false;
